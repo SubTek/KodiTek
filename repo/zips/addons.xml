@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.koditek" name="[B]KodiTek Wizard[/B]" version="0.0.1" provider-name="subtek">
+	<requires>
+		<import addon="xbmc.python" version="3.0.1"/>
+		<import addon="repository.xbmc.org" />
+		<import addon="script.module.accountmgr" />
+		<import addon="script.module.acctview" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">KodiTek is a lightweight Wizard for backup, builds, and tweaks.</summary>
+		<description lang="en_GB">KodiTek Wizard</description>
+		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+		<news>
+0.0.1 - Initial Release
+		</news>
+		<assets>
+				<icon>resources/icon.png</icon>
+				<fanart>resources/fanart.jpg</fanart>
+				<banner></banner>
+				<clearlogo></clearlogo>
+				<screenshot></screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.koditek" name="KodiTek Repository" version="0.0.1" provider-name="SubTek">
+    <extension point="xbmc.addon.repository" name="KodiTek Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/SubTek/koditek1/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/SubTek/koditek1/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/SubTek/koditek1/master/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>KodiTek Repository</summary>
+        <description>Totally awesome Kodi repo</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.accountmgr" version="2.5.8" name="Account Manager" provider-name="Zaxxon709">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" version="2.19.1" />
+            	<import addon="script.module.acctview" version="2.4.1" />
+	</requires>
+	<extension point="xbmc.service" library="lib/startup.py" start="startup" />
+	<extension point="xbmc.python.script" library="lib/default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">Account Manager</summary>
+		<description>Account Manager for Trakt, Debrid, Metadata, Furk, Easynews and File Pursuit</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">The author is not responsible for the use of this addon. [CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="script.module.acctview" name="acctviewer" version="2.4.1" provider-name="Zaxxon709">
+    <extension point="xbmc.python.pluginsource" library="default.py">
+    </extension>
+    <extension point="xbmc.python.module" library="resources" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">View Authorized Accounts</summary>
+        <description lang="en">Account Manager Dependency</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://</source>
+    </extension>
+</addon>
+</addons>
