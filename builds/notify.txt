@@ -2,12 +2,9 @@
 |||
 
 
-
-
-
 ---------------- [B]SubTek Kodi Builds[/B] ------------------
 
-SubTek Repository - https://koditek.digitalnine.io
+SubTek Repository - https://subtek.github.io/koditek
 
 ------ [B]Current Builds[/B] ------
 KodiTek
