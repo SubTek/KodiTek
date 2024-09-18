@@ -1,30 +1,46 @@
 {
     "Trakt And Debrid Account Manager": {
+        "icon": "",
         "items": [
             {
                 "name": "Authenticate Real Debrid",
-                "icon": "realdebrid.png",
                 "url": "RunScript(script.module.accountmgr, action=realdebridAuth)"
             },
             {
                 "name": "Authenticate Premiumize",
-                "icon": "premiumize.png",
                 "url": "RunScript(script.module.accountmgr, action=premiumizeAuth)"
             },
             {
+                "name": "Authenticate All Debrid",
+                "url": "RunScript(script.module.accountmgr, action=alldebridAuth)"
+            },
+            {
                 "name": "Authenticate TRAKT",
-                "icon": "trakt.png",
                 "url": "RunScript(script.module.accountmgr, action=traktAuth)"
             },
             {
                 "name": "Re-Sync Debrid Accounts",
-                "icon": "sync.png",
                 "url": "RunScript(script.module.accountmgr, action=ReSyncAll)"
             },
             {
                 "name": "Re-Sync TRAKT Accounts",
-                "icon": "sync.png",
                 "url": "RunScript(script.module.accountmgr, action=traktReSync)"
+            },
+            {
+                "name": "View Real Debrid logins",
+                "url": "ActivateWindow(10001,plugin://script.module.acctview/?mode=realdebrid,return)"
+            },
+            {
+                "name": "View Premiumize logins",
+                "url": "ActivateWindow(10001,plugin://script.module.acctview/?mode=premiumize,return)"
+            },
+            {
+                "name": "View All-Debrid Logins",
+                "url": "ActivateWindow(10001,plugin://script.module.acctview/?mode=alldebrid,return)"
+            },
+            {
+                "name": "View Trakt Logins",
+                "url": "ActivateWindow(10001,plugin://script.module.acctview/?mode=trakt,return)"
             },
             {
                 "name": "Open Account Manager",
