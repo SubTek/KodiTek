@@ -2,7 +2,7 @@
 
 <build>
 <name>Kodi Tek</name>
-<version>1.0</version>
+<version>1.1</version>
 <url>http://short.digitalnine.io/koditek</url>
 <icon>https://raw.githubusercontent.com/SubTek/KodiTek/4c98b5e18bb228dc7a31465aaee4df010bc7572b/icon.png</icon>
 <fanart>https://raw.githubusercontent.com/SubTek/KodiTek/4c98b5e18bb228dc7a31465aaee4df010bc7572b/fanart.jpg</fanart>
